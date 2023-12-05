@@ -6,4 +6,4 @@ answer := (input contents substrings) sum: [ :line |
 	(line detect: [ :c | c isDigit ]) digitValue * 10 +
 	(line reversed detect: [ :c | c isDigit  ]) digitValue ].
 
-Transcript show: answer.
+Transcript clear; show: answer.
